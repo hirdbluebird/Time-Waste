@@ -1,0 +1,30 @@
+{
+  "name": "timewaste",
+  "version": "1.0.0",
+  "description": "social network",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirdbluebird/Time-Waste.git"
+  },
+  "author": "hirdbluebird",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hirdbluebird/Time-Waste/issues"
+  },
+  "homepage": "https://github.com/hirdbluebird/Time-Waste#readme",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
