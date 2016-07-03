@@ -20,8 +20,12 @@
   "dependencies": {
     "angular": "^1.5.7",
     "body-parser": "^1.15.2",
+    "connect-multiparty": "^2.0.0",
     "express": "^4.14.0",
-    "mongoose": "^4.5.2"
+    "fs-extra": "^0.30.0",
+    "mongoose": "^4.5.2",
+    "ng-file-upload": "^12.0.4",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

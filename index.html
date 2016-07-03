@@ -7,14 +7,19 @@
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavigationController">
-	  <div class="container">
-	    <div> 
-	    	<input type="email" ng-model="login.email" name="">
-	    	<input type="password" ng-model="login.password" name="">
-	    	<button ng-click="logUserIn()">Login</button>
-	    	<a ui-sref="signUp">Create an account</a>
-	    </div>
-	  </div>
+	    <div class="container">
+		    <div ng-show="!loggedIn">
+			    <div> 
+			    	<input type="email" ng-model="login.email" name="">
+			    	<input type="password" ng-model="login.password" name="">
+			    	<button ng-click="logUserIn()">Login</button>
+			    	<a ui-sref="signUp">Create an account</a>
+			    </div>
+		    </div>
+		    <div ng-show="loggedIn">
+		    	<a ui-sref="editProfile">Edit Profile</a>
+		    </div>
+		</div>
 	</nav>
 
 	<div ui-view></div>
@@ -25,5 +30,11 @@
 	<script src="app/app.js"></script>
 	<script src="app/signup/signup-controller.js"></script>
 	<script src="app/navigation/navigation-controller.js"></script>
+	<script src="app/profile/edit-profile-controller.js"></script>
+
+	<!-- Libraries -->
+	<script src="node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
+	<script src="node_modules/ng-file-upload/dist/ng-file-upload-all.js"></script>
+	<script src="node_modules/ng-file-upload/dist/ng-file-upload-shim.js"></script>
 </body>
 </html>
