@@ -39,7 +39,7 @@
 					}).error(function(err){
 						console.log('error');
 					});
-				}
+				};
 
 				$scope.updateBio = function() {
 					var request = {
@@ -51,6 +51,6 @@
 					}).error(function(error){
 						console.log('error saveing bio');
 					});
-				}
+				};
 	}]);
 }());
