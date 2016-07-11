@@ -18,6 +18,7 @@
 		    </div>
 		    <div ng-show="loggedIn">
 		    	<a ui-sref="editProfile">Edit Profile</a>
+		    	<a ng-click="logOut();">LogOut</a>
 		    </div>
 		</div>
 	</nav>
@@ -28,9 +29,12 @@
 	<script src="node_modules/angular/angular.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 	<script src="app/app.js"></script>
+
+	<!-- controllers -->
 	<script src="app/signup/signup-controller.js"></script>
 	<script src="app/navigation/navigation-controller.js"></script>
 	<script src="app/profile/edit-profile-controller.js"></script>
+	<script src="app/main/main-controller.js"></script>
 
 	<!-- Libraries -->
 	<script src="node_modules/ng-file-upload/dist/ng-file-upload.js"></script>

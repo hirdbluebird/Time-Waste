@@ -1,0 +1,28 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-10">
+			<textarea ng-model="newWaste"
+					  ng-keypress="sendWaste($event)"
+					  class="form-control"
+					  placeholder="Post Waste... then press enter">
+				
+			</textarea>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="col-md-10">
+			<div ng-repeat="waste in wastes">
+				<div class="waste-section">
+					<div class="waste-user">
+						<strong>{{waste.user}}</strong>
+						<br><img ng-src="{{waste.userImage}}">
+					</div>
+					<div class="waste-body">
+						<p class="waste-date">{{waste.date | date: 'MM/dd/yyyy hh:mm'}}</p>
+						<p class="waste-content">{{waste.content}}</p>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
